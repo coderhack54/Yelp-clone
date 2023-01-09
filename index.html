@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelp Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        <header class="navbar">
+            <div class="yelp-navbar" id="navigationBar">
+                <div class="yelp-logo">
+                    <!-- img logo here -->
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/2d2a7a4342fc/assets/img/brand/logo_desktop_white.svg" alt="">
+                </div>
+                <div class="yelp-searchbar">
+                    <div class="searchbar">
+                        <input list="searchoptions"  placeholder="Search"/>
+                        <datalist id="searchoptions">
+                            <option value="Edge">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                        </datalist>
+                    </div>
+                
+                    <div class="searchlocation">
+                        <div id="selectOptions">
+                           <p id="selectField">Choose your location</p> 
+                            <!-- <img src="./assets/downarrow.png" alt=""> -->
+                        </div>
+                        <ul class="select-option-dropdown hide" id="locationdropdown">
+                            <li class="options">United States</li>
+                            <li class="options">United Kingdom</li>
+                            <li class="options">Australia</li>
+                        </ul>
+                    </div>
+               
+                    <div class="searchIcon" >
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                   
+                </div>
+                <div class="yelp-navigationButtons">
+                    <a href="">For businesses</a>
+                    <a href="">Write a Review</a>
+                    <button>Login</button>
+                    <button>Sign Up</button>
+                </div>
+                <div class="mobile-nav-buttons" id="navButtons">
+                    <ion-icon name="menu-outline" class="mobile-nav-icons"></ion-icon>
+                    <ion-icon name="close-outline" class="mobile-nav-icons"></ion-icon>
+                </div>
+                <div class="yelp-mobile-navbar">
+                    <div class="yelp-navigationButtons-mobile">
+                        <a href="">For businesses</a>
+                        <a href="">Write a Review</a>
+                    </div>
+                    <div class="yelp-searchbar-mobile">
+                        <div class="searchbar">
+                            <input list="searchoptions"  placeholder="Search"/>
+                            <datalist id="searchoptions">
+                                <option value="Edge">
+                                    <option value="Firefox">
+                                    <option value="Chrome">
+                                    <option value="Opera">
+                                    <option value="Safari">
+                            </datalist>
+                        </div>
+                    
+                        <div class="searchlocation">
+                            <div id="selectOptions">
+                               <p id="selectField">Choose your location</p> 
+                                <!-- <img src="./assets/downarrow.png" alt=""> -->
+                            </div>
+                            <ul class="select-option-dropdown hide" id="locationdropdown">
+                                <li class="options">United States</li>
+                                <li class="options">United Kingdom</li>
+                                <li class="options">Australia</li>
+                            </ul>
+                        </div>
+                   
+                        <div class="searchIcon" >
+                            Search
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                     
+                       
+                    </div>
+                    <div class="yelp-navigationButtons-mobile">
+                        <button>Login</button>
+                        <button>Sign Up</button>
+                    </div>
+               
+                </div>
+            </div>
+         
+            <div class="yelp-nav-navContainer">
+                <div class="navcontainer-start"></div>
+                <div class="navcontainer-end">
+                    <div class="sub-navbar-dropdown">
+
+                        <div id="selectOptions1" class="dropdown-style">
+                            <p id="selectField1">Restaurants</p>
+                              <img src="./assets/downarrow.png" alt="" class="dropdown-img">
+                    
+                         </div>
+                         <ul class="select-restuarants hide" id="restaurants-dropdown">
+                            <li class="options1">Chinese</li>
+                            <li class="options1">Italian</li>
+                            <li class="options1">Japanese</li>
+                            <li class="options1">Mexican</li>
+                            <li class="options1">Reservations</li>
+                            <li class="options1">Thai</li>
+                            <li class="options1">Delivery</li>
+                            <li class="options1">Burgers</li>
+                         </ul>
+                    </div>
+                    <div class="sub-navbar-dropdown">
+
+                        <div id="selectOptions2" class="dropdown-style">
+                            <p id="selectField2">Home services</p>
+                              <img src="./assets/downarrow.png" alt="" class="dropdown-img">
+                    
+                         </div>
+                         <ul class="select-restuarants hide" id="home-services-dropdown">
+                            <li class="options2">Contractor</li>
+                            <li class="options2">Electrician</li>
+                            <li class="options2">Home Cleaners</li>
+                            <li class="options2">HVAC</li>
+                            <li class="options2">landscaping</li>
+                            <li class="options2">Lock Smiths</li>
+                            <li class="options2">Movers</li>
+                            <li class="options2">Plumbers</li>
+                         </ul>
+                    </div>
+                    <div class="sub-navbar-dropdown">
+
+                        <div id="selectOptions3" class="dropdown-style">
+                            <p id="selectField3">Auto services</p>
+                              <img src="./assets/downarrow.png" alt="" class="dropdown-img">
+                    
+                         </div>
+                         <ul class="select-restuarants hide" id="auto-services-dropdown">
+                     
+                                <li class="options3">Chinese</li>
+                                <li class="options3">Italian</li>
+                                <li class="options3">Japanese</li>
+                                <li class="options3">Mexican</li>
+                                <li class="options3">Reservations</li>
+                                <li class="options3">Thai</li>
+                                <li class="options3">Delivery</li>
+                                <li class="options3">Burgers</li>
+                         </ul>
+                    </div>
+                    <div class="sub-navbar-dropdown">
+
+                        <div id="selectOptions4" class="dropdown-style">
+                            <p id="selectField4">More</p>
+                              <img src="./assets/downarrow.png" alt="" class="dropdown-img">
+                    
+                         </div>
+                         <ul class="select-restuarants hide" id="more-dropdown">
+                      
+                                <li class="options4">Chinese</li>
+                                <li class="options4">Italian</li>
+                                <li class="options4">Japanese</li>
+                                <li class="options4">Mexican</li>
+                                <li class="options4">Reservations</li>
+                                <li class="options4">Thai</li>
+                                <li class="options4">Delivery</li>
+                                <li class="options4">Burgers</li>
+                         </ul>
+                    </div>
+                 
+                </div>
+              
+            </div>
+        </header>
+        <section class="banner-refernce">
+            <div class="banneroverlay">
+                <div class="bannerbox">
+                    <div class="slidernavbutton">
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                    <div class="banner-content">
+                        <div>
+                            <h1>Keep your house</h1>
+                            <h1>humming</h1>
+                        </div>
+                        <button>
+                            <img src="./assets/searchicon.png" alt="">
+                           <span> Appliance Repair</span> 
+                        </button>
+                    </div>
+                </div>
+                <div class="banner-credits">
+                    <p>CJ Plumbing & Heating</p>
+                    <p>Photo from the Buisness owner</p>
+                </div>
+            </div>
+            <div class="yelp-Banner">
+                <img src="https://s3-media0.fl.yelpcdn.com/educatorphoto/IJElscsPxKRiQJFwUADA-w/o.jpg" alt="">
+            </div>
+        </section>
+
+<!-- -------------- Recent activity section- ------------  -->
+        <section class="fill"></section>
+      <section class="recent-section">
+        <div class="recentactivity">
+        
+            <h1 class="section-heading">Recent Activity</h1>
+            <div class="recent-activity-cards">
+                <div class="card">
+                    <div class="img-header">
+                        <img src="./assets/person.webp" alt="">
+                        <div>
+                            <h2>Cassandra W.</h2>
+                            <p>Added 6 photos</p>
+                        </div>
+                    </div>
+                    <p class="Description">Au Sushi</p>
+                    <div class="image-section">
+                        <div>
+                            <img src="./assets//food.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        <div>
+                            <img src="./assets/food1.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        
+                  
+                    </div>
+                 <p class="Description">Show all 6 photos</p>
+                </div>
+                <div class="card">
+                    <div class="img-header">
+                        <img src="./assets/person.webp" alt="">
+                        <div>
+                            <h2>Cassandra W.</h2>
+                            <p>Added 6 photos</p>
+                        </div>
+                    </div>
+                    <p class="Description">Au Sushi</p>
+                    <div class="image-section">
+                        <div>
+                            <img src="./assets//food.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        <div>
+                            <img src="./assets/food1.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        
+                  
+                    </div>
+                 <p class="Description">Show all 6 photos</p>
+                </div>
+                <div class="card">
+                    <div class="img-header">
+                        <img src="./assets/person.webp" alt="">
+                        <div>
+                            <h2>Cassandra W.</h2>
+                            <p>Added 6 photos</p>
+                        </div>
+                    </div>
+                    <p class="Description">Au Sushi</p>
+                    <div class="image-section">
+                        <div>
+                            <img src="./assets//food.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        <div>
+                            <img src="./assets/food1.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        
+                  
+                    </div>
+                 <p class="Description">Show all 6 photos</p>
+                </div>
+                <div class="card">
+                    <div class="img-header">
+                        <img src="./assets/person.webp" alt="">
+                        <div>
+                            <h2>Cassandra W.</h2>
+                            <p>Added 6 photos</p>
+                        </div>
+                    </div>
+                    <p class="Description">Au Sushi</p>
+                    <div class="image-section">
+                        <div>
+                            <img src="./assets//food.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        <div>
+                            <img src="./assets/food1.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        
+                  
+                    </div>
+                 <p class="Description">Show all 6 photos</p>
+                </div>
+                <div class="card">
+                    <div class="img-header">
+                        <img src="./assets/person.webp" alt="">
+                        <div>
+                            <h2>Cassandra W.</h2>
+                            <p>Added 6 photos</p>
+                        </div>
+                    </div>
+                    <p class="Description">Au Sushi</p>
+                    <div class="image-section">
+                        <div>
+                            <img src="./assets//food.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        <div>
+                            <img src="./assets/food1.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        
+                  
+                    </div>
+                 <p class="Description">Show all 6 photos</p>
+                </div>
+                <div class="card">
+                    <div class="img-header">
+                        <img src="./assets/person.webp" alt="">
+                        <div>
+                            <h2>Cassandra W.</h2>
+                            <p>Added 6 photos</p>
+                        </div>
+                    </div>
+                    <p class="Description">Au Sushi</p>
+                    <div class="image-section">
+                        <div>
+                            <img src="./assets//food.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        <div>
+                            <img src="./assets/food1.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        
+                  
+                    </div>
+                 <p class="Description">Show all 6 photos</p>
+                </div>
+                <div class="card">
+                    <div class="img-header">
+                        <img src="./assets/person.webp" alt="">
+                        <div>
+                            <h2>Cassandra W.</h2>
+                            <p>Added 6 photos</p>
+                        </div>
+                    </div>
+                    <p class="Description">Au Sushi</p>
+                    <div class="image-section">
+                        <div>
+                            <img src="./assets//food.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        <div>
+                            <img src="./assets/food1.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        
+                  
+                    </div>
+                 <p class="Description">Show all 6 photos</p>
+                </div>
+                <div class="card">
+                    <div class="img-header">
+                        <img src="./assets/person.webp" alt="">
+                        <div>
+                            <h2>Cassandra W.</h2>
+                            <p>Added 6 photos</p>
+                        </div>
+                    </div>
+                    <p class="Description">Au Sushi</p>
+                    <div class="image-section">
+                        <div>
+                            <img src="./assets//food.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        <div>
+                            <img src="./assets/food1.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        
+                  
+                    </div>
+                 <p class="Description">Show all 6 photos</p>
+                </div>
+                <div class="card">
+                    <div class="img-header">
+                        <img src="./assets/person.webp" alt="">
+                        <div>
+                            <h2>Cassandra W.</h2>
+                            <p>Added 6 photos</p>
+                        </div>
+                    </div>
+                    <p class="Description">Au Sushi</p>
+                    <div class="image-section">
+                        <div>
+                            <img src="./assets//food.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        <div>
+                            <img src="./assets/food1.jpg" alt="">
+                            <ion-icon name="thumbs-up-outline" class="card-icons"></ion-icon>
+                        </div>
+                        
+                  
+                    </div>
+                 <p class="Description">Show all 6 photos</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Categories section starts here -->
+
+    <section>
+        <div class="categories">
+            <h1>Categories</h1>
+            <div class="cardContainer">
+                <div class="categoryCard">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg" alt="">
+                    <h2>Restaurants</h2>
+                </div>
+                <div class="categoryCard">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg" alt="">
+                    <h2>Shopping </h2>
+                </div>
+                <div class="categoryCard">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg" alt="">
+                    <h2>Night Life</h2>
+                </div>
+                <div class="categoryCard">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg" alt="">
+                    <h2>Active life</h2>
+                </div>
+                <div class="categoryCard">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg" alt="">
+                    <h2>Beauty & Spas</h2>
+                </div>
+                <div class="categoryCard">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg" alt="">
+                    <h2>Automotive</h2>
+                </div>
+                <div class="categoryCard">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg" alt="">
+                    <h2>Home Services</h2>
+                </div>
+                <div class="categoryCard">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg" alt="">
+                    <h2>More</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+        ©Copyright 2023. Made with ❤️ by Anmol Srivastava
+    </section>
+
+
+<!-- -----------Javacript start here------------- -->
+        <script>
+            var options = document.getElementsByClassName('options');
+            var selectOptions = document.getElementById("selectOptions");
+            var selectField = document.getElementById("selectField");
+            var list = document.getElementById("locationdropdown");
+            selectOptions.onclick= function(){
+                list.classList.toggle("hide");
+                }
+
+            for (option of options) {
+                option.onclick=function(){
+                    selectField.innerHTML=this.textContent;
+                    list.classList.toggle("hide");
+                }
+            }
+            var options1 = document.getElementsByClassName('options1');
+            var selectOptions1 = document.getElementById("selectOptions1");
+            var list1 = document.getElementById("restaurants-dropdown");
+            
+            var options2 = document.getElementsByClassName('options2');
+            var selectOptions2 = document.getElementById("selectOptions2");
+            var list2 = document.getElementById("home-services-dropdown");
+            
+            var options3 = document.getElementsByClassName('options3');
+            var selectOptions3 = document.getElementById("selectOptions3");
+            var list3 = document.getElementById("auto-services-dropdown");
+
+            var options4 = document.getElementsByClassName('options4');
+            var selectOptions4 = document.getElementById("selectOptions4");
+            var list4 = document.getElementById("more-dropdown");
+
+            selectOptions1.onclick= function(){
+            
+                list2.classList.add("hide");
+                list3.classList.add("hide");
+                list4.classList.add("hide");
+                list1.classList.toggle("hide");
+                }
+      
+        
+
+            for (option of options1) {
+                option.onclick=function(){
+                    list1.classList.toggle("hide");
+                
+                }
+           
+            }
+       
+
+            selectOptions2.onclick= function(){
+                list1.classList.add("hide");
+                list3.classList.add("hide");
+                list4.classList.add("hide");
+                list2.classList.toggle("hide");
+                }
+
+            for (option of options2) {
+                option.onclick=function(){
+                    list2.classList.toggle("hide");
+                }
+            }
+
+            selectOptions3.onclick= function(){
+                list1.classList.add("hide");
+                list2.classList.add("hide");
+                list4.classList.add("hide");
+                list3.classList.toggle("hide");
+                }
+
+
+            for (option of options3) {
+                option.onclick=function(){
+                    list3.classList.toggle("hide");
+                }
+             
+            }
+            selectOptions4.onclick= function(){
+                list1.classList.add("hide");
+                list2.classList.add("hide");
+                list3.classList.add("hide");
+                list4.classList.toggle("hide");
+                }
+       
+
+            for (option of options) {
+                option.onclick=function(){
+                    list4.classList.toggle("hide");
+                }
+          
+            }
+
+
+                 // Hover effect for all list items of subnnavbar dropdown
+
+            document.querySelectorAll(".options1").forEach(item=>{
+                item.addEventListener("mouseover",function(event){
+                    // this.classList.add("hover-effect");
+                    console.log("before",item.classList)
+                    item.classList.add('hover-effect');
+                    console.log("after",item.classList)
+                })
+                item.addEventListener("mouseout",function(event){
+                    // this.classList.add("hover-effect");
+                    console.log("before",item.classList)
+                    item.classList.remove('hover-effect');
+                    console.log("after",item.classList)
+                })
+            })
+            document.querySelectorAll(".options2").forEach(item=>{
+                item.addEventListener("mouseover",function(event){
+                    // this.classList.add("hover-effect");
+                    console.log("before",item.classList)
+                    item.classList.add('hover-effect');
+                    console.log("after",item.classList)
+                })
+                item.addEventListener("mouseout",function(event){
+                    // this.classList.add("hover-effect");
+                    console.log("before",item.classList)
+                    item.classList.remove('hover-effect');
+                    console.log("after",item.classList)
+                })
+            })
+            document.querySelectorAll(".options3").forEach(item=>{
+                item.addEventListener("mouseover",function(event){
+                    // this.classList.add("hover-effect");
+                    console.log("before",item.classList)
+                    item.classList.add('hover-effect');
+                    console.log("after",item.classList)
+                })
+                item.addEventListener("mouseout",function(event){
+                    // this.classList.add("hover-effect");
+                    console.log("before",item.classList)
+                    item.classList.remove('hover-effect');
+                    console.log("after",item.classList)
+                })
+            })
+            document.querySelectorAll(".options4").forEach(item=>{
+                item.addEventListener("mouseover",function(event){
+                    // this.classList.add("hover-effect");
+                    console.log("before",item.classList)
+                    item.classList.add('hover-effect');
+                    console.log("after",item.classList)
+                })
+                item.addEventListener("mouseout",function(event){
+                    // this.classList.add("hover-effect");
+                    console.log("before",item.classList)
+                    item.classList.remove('hover-effect');
+                    console.log("after",item.classList)
+                })
+            })
+     
+        var navbar = document.getElementById("navigationBar");
+       var navButtons = document.getElementById("navButtons");
+
+       const handleClick = () => {
+        navbar.classList.toggle("active")
+       }
+
+       navButtons.addEventListener("click",()=>handleClick())
+
+
+        </script>
+                <!-- // Include the icons in file -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
